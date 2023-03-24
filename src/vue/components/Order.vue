@@ -48,7 +48,7 @@
               v-bind:class="'order-wrapper__form ' + $store.state.webpSupport"
             >
               <form
-                action="sendOrder.php"
+                action="test.php"
                 method="post"
                 class="spnForm order-form order-form-content"
               >
@@ -88,7 +88,6 @@
                       type="text"
                       name="name"
                       placeholder="Ваше имя"
-                      
                       required
                     />
                   </div>
@@ -97,7 +96,6 @@
                     <input
                       aria-label="Ваш телефон"
                       type="tel"
-                     
                       name="phone"
                       placeholder="Ваш телефон"
                       required
@@ -108,7 +106,7 @@
                 <CheckboxCredit inputType="checkbox" />
 
                 <div class="submit-input__button">
-                  <button type="submit" class="button">
+                  <button type="submit" disabled class="button">
                     Заказать с подарками
                   </button>
                 </div>

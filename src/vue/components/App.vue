@@ -32,13 +32,9 @@
     <ModalOrder />
     <ModalCall />
     <!-- modals -->
-
-    <!-- button-up -->
-    <Up />
-    <!-- button-up -->
   </div>
-</template> 
-  
+</template>
+
 <script>
 import { defineAsyncComponent } from "vue"; //НЕ ПОДГРУЖАТЬ БЛОКИ С ФОРМАМИ АСИНХРОННО!!!!!
 
@@ -49,9 +45,6 @@ import ModalCall from "./ModalCall.vue";
 import ModalOrder from "./ModalOrder.vue";
 import Delivery from "./Delivery.vue";
 import Order from "./Order.vue";
-import Up from "../helpers/ButtonUp.vue";
-
-import store from "../store";
 
 export default {
   components: {
@@ -61,7 +54,6 @@ export default {
     ModalOrder,
     Delivery,
     Order,
-    Up,
 
     Destiny: defineAsyncComponent(() => import("./Destiny.vue")),
     Result: defineAsyncComponent(() => import("./Result.vue")),
@@ -83,4 +75,4 @@ export default {
     Shops: defineAsyncComponent(() => import("./Shops.vue")),
   },
 };
-</script>   
+</script>

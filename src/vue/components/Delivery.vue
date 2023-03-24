@@ -12,7 +12,7 @@
             <div class="delivery-wrapper-container">
               <div class="form-container">
                 <form
-                  action="sendOrder.php"
+                  action="test.php"
                   method="post"
                   class="spnForm order-form"
                 >
@@ -41,7 +41,7 @@
                       required
                     />
 
-                    <button type="submit" class="button">
+                    <button type="submit" disabled class="button">
                       Рассчитать стоимость
                     </button>
                   </div>

@@ -122,16 +122,16 @@ function vueTask() {
 function vueWatch() {
   gulp.watch(
     [
-      "web/src/vue/components/*.vue",
-      "web/src/vue/helpers/*.vue",
-      "web/src/vue/store.js",
+      "src/vue/components/*.vue",
+      "src/vue/helpers/*.vue",
+      "src/vue/store.js",
     ],
     gulp.series(vueTask)
   );
 }
 
 function vueClean() {
-  return gulp.src("web/build/vue/*", { read: false }).pipe(clean());
+  return gulp.src("build/vue/*", { read: false }).pipe(clean());
 }
 //сборка шаблонов vue
 
@@ -150,22 +150,22 @@ function webpTask() {
   return src(paths.images.src).pipe(webp()).pipe(gulp.dest(paths.images.dest));
 }
 function imgClean() {
-  return gulp.src("web/build/images/*", { read: false }).pipe(clean());
+  return gulp.src("build/images/*", { read: false }).pipe(clean());
 }
 // оптимизация изображений
 
 // на случай минификации скрипта
 // function jsTask() {
-//   return src("web/static/scripts/smoothScroll.js")
+//   return src("static/scripts/smoothScroll.js")
 //     .pipe(concat("smoothScroll.min.js"))
 //     .pipe(terser())
-//     .pipe(dest("web/static/scripts"));
+//     .pipe(dest("static/scripts"));
 // }
 // exports.js = jsTask;
 // на случай минификации скрипта
 
 function buildClean() {
-  return gulp.src("web/build/*", { read: false }).pipe(clean());
+  return gulp.src("build/*", { read: false }).pipe(clean());
 }
 
 exports.css = series(parallel(cssTask));

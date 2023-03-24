@@ -18,7 +18,7 @@
         <div class="modal-order__wrapper-content">
           <h3 class="modal-title">Пивоварня Bavaria</h3>
 
-          <form class="spnForm form-modal" method="post" action="sendOrder.php">
+          <form class="spnForm form-modal" method="post" action="test.php">
             <FormPresent :ids="this.findPresent.ids" />
 
             <div class="input-container">
@@ -31,7 +31,6 @@
                   placeholder="Ваше имя"
                   required
                 />
-                
               </div>
 
               <div class="standart-input stint">
@@ -39,7 +38,7 @@
                   aria-label="Ваш телефон"
                   type="tel"
                   name="phone"
-                  placeholder="Ваш телефон"   
+                  placeholder="Ваш телефон"
                   required
                 />
               </div>
@@ -61,7 +60,7 @@
               </div>
 
               <div class="submit-input__button">
-                <button type="submit" class="button">Заказать</button>
+                <button type="submit" disabled class="button">Заказать</button>
               </div>
 
               <CheckboxCredit inputType="radio" />

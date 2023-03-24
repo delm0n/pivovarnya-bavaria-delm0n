@@ -10,7 +10,7 @@
         id="call-modal"
         method="post"
         class="spnForm form-modal"
-        action="sendCall.php"
+        action="test.php"
       >
         <input type="hidden" class="url" name="url" />
         <input type="hidden" class="gmt" name="gmt" />
@@ -34,28 +34,24 @@
         <!-- csrf -->
 
         <div class="user-info">
-          
           <input
             aria-label="Ваше имя"
             type="text"
-            
             name="name"
             placeholder="Ваше имя"
             required
           />
-         
+
           <input
             aria-label="Ваш телефон"
             type="tel"
             name="phone"
             placeholder="Ваш телефон"
-           
             required
           />
-         
         </div>
 
-        <button type="submit" class="button">Отправить</button>
+        <button type="submit" disabled class="button">Отправить</button>
 
         <p class="modal-disclaimer">
           Нажимая кнопку «Отправить», вы соглашаетесь на обработку персональных
@@ -68,4 +64,3 @@
     </div>
   </div>
 </template>
-
