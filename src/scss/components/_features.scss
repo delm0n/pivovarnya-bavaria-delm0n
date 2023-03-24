@@ -1,0 +1,191 @@
+#features {
+  .features-bg {
+    &.nowebp {
+      background: $texture;
+      background-blend-mode: multiply, normal;
+    }
+
+    padding: 30px;
+
+    &.webp {
+      background: $texture-webp;
+      background-blend-mode: multiply, normal;
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+      max-width: 768px;
+      margin: 0 auto 70px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 480px;
+      margin: 0 auto 50px;
+    }
+
+    @media (max-width: 425px) {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .container {
+      padding: 0;
+    }
+  }
+
+  .features__wrapper {
+    border: 2px solid #333333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    padding: 40px 0;
+    align-items: center;
+    box-sizing: border-box;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      .features__wrapper-item__line {
+        display: none !important;
+      }
+    }
+
+    &-item {
+      position: relative;
+      overflow: hidden;
+
+      &__line {
+        position: absolute;
+        height: 120px;
+        width: 1px;
+        background: #000000;
+        right: 0;
+        top: 0;
+
+        @media (max-width: 992px) {
+          //   display: none;
+        }
+      }
+
+      &:last-child {
+        .features__wrapper-item__line {
+          display: none;
+        }
+      }
+
+      @media (max-width: 992px) {
+        padding: 20px;
+
+        &:nth-child(1) {
+          .features__wrapper-item__line {
+            left: 50%;
+            width: 85%;
+            height: 1px;
+            transform: translateX(-50%) !important;
+            right: auto;
+            top: auto;
+            bottom: 0;
+            background: #333333;
+          }
+        }
+
+        &:nth-child(2) {
+          .features__wrapper-item__line {
+            width: 1px;
+            height: 70%;
+            right: auto;
+            left: 0;
+            transform: translateY(-50%) !important;
+            top: 50%;
+            background: #333333;
+          }
+        }
+
+        &:nth-child(3) {
+          .features__wrapper-item__line {
+            width: 1px;
+            height: 70%;
+            top: 50%;
+            transform: translateY(-50%) !important;
+            background: #333333;
+          }
+        }
+        &:nth-child(4) {
+          .features__wrapper-item__line {
+            left: 50%;
+            width: 85%;
+            height: 1px;
+            transform: translateX(-50%) !important;
+            background: #333333;
+            right: auto;
+            display: block;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        &:not(:last-child) {
+          border-bottom: 1px solid #000;
+        }
+      }
+
+      &__title {
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 63px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 5px;
+
+        @media (max-width: 1580px) {
+          font-size: 40px;
+          line-height: 55px;
+        }
+
+        @media (max-width: 1280px) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 28px;
+          line-height: 35px;
+        }
+        @media (max-width: 425px) {
+          text-align: left;
+        }
+      }
+
+      &__decr {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.7;
+
+        @media (max-width: 1440px) {
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        @media (max-width: 1280px) {
+          font-size: 18px;
+          line-height: 21px;
+        }
+        @media (max-width: 425px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

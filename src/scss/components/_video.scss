@@ -1,0 +1,130 @@
+#video {
+  @media (min-width: 769px) {
+    padding-top: 40px;
+  }
+  .video-bg {
+    &.nowebp {
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 8.21%),
+        linear-gradient(
+          360deg,
+          rgba(0, 0, 0, 0.5) 11.73%,
+          rgba(0, 0, 0, 0.38) 22.93%
+        ),
+        url("/src/images/video-bg.png") no-repeat;
+      background-size: cover;
+    }
+
+    &.webp {
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 8.21%),
+        linear-gradient(
+          360deg,
+          rgba(0, 0, 0, 0.5) 11.73%,
+          rgba(0, 0, 0, 0.38) 22.93%
+        ),
+        url("/build/images/video-bg.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .container {
+    max-width: 860px;
+    padding-top: 35px;
+  }
+
+  .title,
+  .subtitle {
+    padding-left: 0;
+  }
+
+  .video-item {
+    padding-bottom: 50px;
+    display: block;
+
+    @media (max-width: 768px) {
+      padding-bottom: 30px;
+    }
+
+    &__img {
+      width: 90%;
+      margin: 50px auto 0;
+      position: relative;
+      border-radius: 20px;
+
+      @media (max-width: 992px) {
+        width: 85%;
+      }
+
+      @media (max-width: 860px) {
+        width: 100%;
+        max-width: 533px;
+        margin-top: 105px;
+      }
+
+      @media (max-width: 580px) {
+        margin-top: 75px;
+      }
+
+      img.preview {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        pointer-events: none;
+      }
+    }
+
+    .yt-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -40%) scale(0.85);
+      opacity: 0.8;
+      transition: all 0.45s;
+
+      @media (max-width: 580px) {
+        svg {
+          width: 84px !important;
+          height: 77px !important;
+        }
+      }
+    }
+
+    &:hover {
+      .yt-btn {
+        opacity: 1;
+        transform: translate(-50%, -40%) scale(0.95);
+      }
+    }
+
+    &__decr {
+      position: absolute;
+      left: 23px;
+      top: 23px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      @media (max-width: 860px) {
+        flex-direction: row;
+        gap: 13px;
+        top: 0;
+        left: 0;
+        transform: translateY(calc(-100% - 13px));
+      }
+
+      p {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+
+        @media (max-width: 860px) {
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}

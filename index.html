@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>
+      Пивоварня домашняя автоматическая купить в Москве по низкой цене | 30, 50,
+      70 литров | Геликон
+    </title>
+
+    <meta
+      name="description"
+      content="Бавария (Bavariya) лучшая домашняя автоматическая пивоварня. Отзывы, характеристики, инструкции – все на официальном сайте. Рассрочка! ⭐Гарантия качества от производителя. ⭐ Доставка товаров по России, в Казахстан и Беларусь ✅ 15 лет на рынке ☎️ 8 (800) 250 59 32"
+    />
+    <meta
+      name="keywords"
+      content="купить пивоварню, пивоварня bavaria, домашние пивоварни, мини-пивоварня"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link
+      rel="preload"
+      href="build/images/header-bg.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="build/images/header-bar--droji.webp"
+      as="image"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="build/images/destiny-bg.webp"
+      as="image"
+      type="image/webp"
+    />
+
+    <!-- gsap -->
+    <script src="static/scripts/gsap.min.js"></script>
+    <script src="static/scripts/ScrollTrigger.min.js"></script>
+    <script src="static/scripts/ScrollToPlugin.min.js"></script>
+    <!-- gsap -->
+
+    <!-- smoothScroll -->
+    <script defer src="static/scripts/smoothScroll.min.js"></script>
+    <!-- smoothScroll -->
+
+    <link rel="stylesheet" href="build/styles/header-style.css" media="all" />
+  </head>
+  <body
+    data-goods='{"1823":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 30\u043b\/10\u043b","oldPrice":64290,"price":44990,"oldPriceF":"64 290","priceF":"44 990","image":"","discount":0},"1824":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 50\u043b\/30\u043b","oldPrice":71450,"price":49990,"oldPriceF":"71 450","priceF":"49 990","image":"","discount":0},"1825":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 70\/50\u043b","oldPrice":85700,"price":59990,"oldPriceF":"85 700","priceF":"59 990","image":"","discount":0},"4415":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 30\u043b\/10\u043b WiFi","oldPrice":78590,"price":54990,"oldPriceF":"78 590","priceF":"54 990","image":"","discount":0},"4416":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 50\u043b\/30\u043b WiFi","oldPrice":85700,"price":59990,"oldPriceF":"85 700","priceF":"59 990","image":"","discount":0},"4417":{"name":"\u041f\u0438\u0432\u043e\u0432\u0430\u0440\u043d\u044f BAVARIA 70\u043b\/50\u043b WiFi","oldPrice":99990,"price":69990,"oldPriceF":"99 990","priceF":"69 990","image":"","discount":0}}'
+  >
+    <div id="#loader" class="load">
+      <div class="loader"></div>
+    </div>
+
+    <script>
+      var goodsJson = JSON.parse(document.body.getAttribute("data-goods"));
+
+      var csrf = "";
+      clearHide();
+      var tomorrow = "";
+      var testVersion = false;
+      var webpSup = "webp";
+
+      var goods = {
+        l30: 1823,
+        l50: 1824,
+        l70: 1825,
+        l30_w: 4415,
+        l50_w: 4416,
+        l70_w: 4417,
+      };
+
+      async function clearHide() {
+        var cs = document.querySelector('#fide-form input[name="csrf"]');
+        if (cs != null) {
+          csrf = cs.value;
+          const formFide = document.querySelector("#fide-form");
+          const parent = formFide.parentNode;
+          parent.removeChild(formFide);
+        } else {
+          await new Promise((resolve, reject) => {
+            setTimeout(function () {
+              resolve(clearHide());
+            }, 100);
+          });
+        }
+      }
+    </script>
+
+    <div id="app"></div>
+
+    <script src="build/vue/main.js"></script>
+
+    <!-- main-style -->
+    <script>
+      window.addEventListener("DOMContentLoaded", function (event) {
+        var mainscc = document.createElement("link");
+        mainscc.rel = "stylesheet";
+        mainscc.href = "build/styles/main-style.css";
+        document.head.insertBefore(
+          mainscc,
+          document.head.childNodes[document.head.childNodes.length - 1]
+            .nextSibling
+        );
+      });
+    </script>
+    <!-- main-style -->
+
+    <footer>
+      <div class="footer-bg webp">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-wrapper__logo">
+              <img
+                class="logo-img"
+                src="build/images/logo-footer.webp"
+                alt="helicon"
+              />
+            </div>
+
+            <div class="footer-wrapper__contact">
+              <a href="tel:88002505932" class="footer-wrapper__contact-tel"
+                >8 800 250 59 32</a
+              >
+              <p>телефон горячей линии</p>
+              <!-- <div class="footer-wrapper__contact-net">
+                            <a href="https://vk.com/gradus_haus" target="_blank">
+                                <svg class="net" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                    <circle cx="18" cy="18" r="18" fill="white" />
+                                    <g opacity="0.2">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6919 37.3838C29.0151 37.3838 37.3838 29.0151 37.3838 18.6919C37.3838 8.36865 29.0151 0 18.6919 0C8.36865 0 0 8.36865 0 18.6919C0 29.0151 8.36865 37.3838 18.6919 37.3838ZM9 15C9.15428 21.8709 12.8569 26 19.3485 26H19.7165V22.0691C22.1019 22.2893 23.9056 23.9079 24.6295 26H28C27.0743 22.8729 24.6414 21.1441 23.1223 20.4835C24.6414 19.6687 26.7775 17.6867 27.2878 15H24.2259C23.5613 17.1802 21.5916 19.1622 19.7165 19.3493V15H16.6545V22.6196C14.7557 22.1792 12.3585 20.043 12.2517 15H9Z" fill="white" />
+                                    </g>
+                                </svg>
+                            </a>
+    
+                            <a href="https://ok.ru/group/63447127818482" target="_blank">
+                                <svg class="net" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                                    <circle cx="18" cy="18" r="18" fill="white" />
+                                    <g opacity="0.2">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18.5C0 8.28273 8.28273 0 18.5 0C28.7173 0 37 8.28273 37 18.5C37 28.7173 28.7173 37 18.5 37C8.28273 37 0 28.7173 0 18.5ZM18.4874 18.797C21.2155 18.797 23.433 16.6561 23.433 14.0242C23.433 11.3915 21.2155 9.25 18.4874 9.25C15.76 9.25 13.5418 11.3915 13.5418 14.0242C13.5418 16.6561 15.76 18.797 18.4874 18.797ZM23.3729 21.5456C22.4786 22.0877 21.5078 22.4722 20.5011 22.6936L23.2658 25.3626C23.8322 25.9082 23.8322 26.7942 23.2658 27.3404C22.7 27.8865 21.783 27.8865 21.2178 27.3404L18.4995 24.7176L15.7836 27.3404C15.5004 27.6132 15.1293 27.7497 14.7583 27.7497C14.3878 27.7497 14.0173 27.6132 13.7341 27.3404C13.1683 26.7942 13.1683 25.9088 13.7335 25.3626L16.4985 22.6936C15.4918 22.4722 14.5209 22.0872 13.6267 21.5456C12.9499 21.1337 12.7466 20.2708 13.173 19.6169C13.5983 18.9622 14.4925 18.7651 15.1705 19.177C17.1951 20.4064 19.8033 20.4067 21.8291 19.177C22.5071 18.7651 23.401 18.9622 23.8271 19.6169C24.2535 20.2702 24.0497 21.1337 23.3729 21.5456Z" fill="white" />
+                                        <path d="M18.4867 12.0469C19.6159 12.0469 20.5344 12.9332 20.5344 14.0232C20.5344 15.1124 19.6159 15.9993 18.4867 15.9993C17.3584 15.9993 16.439 15.1124 16.439 14.0232C16.439 12.9332 17.3584 12.0469 18.4867 12.0469Z" fill="white" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div> -->
+            </div>
+            <div class="footer-wrapper__info">
+              <div class="footer-wrapper__info-text">
+                <p><span> ИНН: </span> 432500888349</p>
+                <p><span> ОГРНИП: </span> 314744919000039</p>
+              </div>
+
+              <div class="footer-wrapper__info-text">
+                <p><span> Адрес почтовый (фактический): </span></p>
+                <p>610006, г.&nbsp;Киров, Октябрьский пр&#8209;т, д.&nbsp;24</p>
+                <p><span> Для корреспонденции: </span> 610000, а/я 158</p>
+              </div>
+            </div>
+
+            <div class="footer-wrapper__links">
+              <a
+                href="uploadupdate/confidentiality.pdf"
+                target="_blank"
+                class="doc"
+                >Политика конфиденциальности</a
+              >
+              <a download href="uploadupdate/oferta-2.pdf" class="doc"
+                >Договор оферты</a
+              >
+              <a
+                href="https://bavaria-beer.ru/dostavka-i-oplata"
+                target="_blank"
+                class="doc"
+                rel="noopener"
+                >Доставка по всей России
+              </a>
+
+              <a draggable="false" class="button" href="/opt/" target="_blank"
+                >Купить оптом</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="container copyright">
+          <p>© 2010 - 2023 pivovarnya-bavaria.ru Все права защищены.</p>
+          <p>
+            Использование материалов разрешено только с согласия
+            правообладателей.
+          </p>
+          <p>
+            Полное или частичное копирование сайта запрещено и преследуется по
+            закону.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://apispn.ru/css-min/fancybox-4.min.css"
+    />
+    <script
+      defer
+      onload="fancyInit()"
+      src="https://apispn.ru/js-min/fancybox-4.min.js"
+    ></script>
+    <script>
+      function fancyInit() {
+        Fancybox.bind("[data-fancybox]", {});
+        Fancybox.bind("[data-fancybox='feedback']", {});
+        Fancybox.bind("[data-fancybox='photo']", {});
+        Fancybox.bind("[data-fancybox='header-video']", {
+          Toolbar: {
+            autoEnable: false,
+            display: ["close"],
+          },
+        });
+        Fancybox.bind("[data-fancybox='header-video-mobile']", {
+          Toolbar: {
+            autoEnable: false,
+            display: ["close"],
+          },
+        });
+        Fancybox.bind("[data-fancybox='video']", {
+          Toolbar: {
+            autoEnable: false,
+            display: ["close"],
+          },
+        });
+      }
+    </script>
+    <!-- fancybox -->
+  </body>
+</html>

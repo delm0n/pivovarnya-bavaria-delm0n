@@ -1,0 +1,137 @@
+#destiny {
+  .container {
+    @extend .container-nopadding-mobile;
+
+    padding-top: 70px;
+
+    @media (max-width: 1439px) {
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+      padding-top: 20px;
+    }
+  }
+
+  .destiny-bg {
+    &.nowebp {
+      background: url("/src/images/destiny-bg.png") no-repeat;
+      background-position: 0 -100px;
+      background-size: cover;
+
+      @media (max-width: 768px) {
+        background: url("/src/images/destiny-bg-mobile.png") no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+      }
+    }
+
+    &.webp {
+      background: url("/build/images/destiny-bg.webp") no-repeat;
+      background-position: 0 -100px;
+      background-size: cover;
+
+      @media (max-width: 768px) {
+        background: url("/build/images/destiny-bg-mobile.webp") no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+      }
+    }
+  }
+
+  .destiny-swiper-pagination {
+    @extend .swiper-pagination;
+
+    @media (min-width: 1440px) {
+      display: none !important;
+    }
+  }
+
+  .destiny-swiper-button-prev {
+    @extend .swiper-button-prev;
+
+    @media (min-width: 1440px) {
+      display: none !important;
+    }
+  }
+
+  .destiny-swiper-button-next {
+    @extend .swiper-button-next;
+
+    @media (min-width: 1440px) {
+      display: none !important;
+    }
+  }
+
+  .destiny-wrapper {
+    margin-top: 44px;
+
+    @media (max-width: 768px) {
+      margin-top: 17px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .destiny-item {
+    &__container {
+      //   margin-right: 30px;
+      background: rgba(255, 184, 0, 0.15);
+      border-radius: 5px;
+      padding: 18px 13px 27px 20px;
+      box-sizing: border-box;
+      height: 100%;
+      // cursor: pointer;
+
+      @media (max-width: 768px) {
+        border-radius: 0;
+      }
+    }
+
+    &__title-block {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 22px;
+
+      img {
+        pointer-events: none;
+      }
+    }
+
+    &__title {
+      @extend .title-section-28;
+    }
+
+    &__text {
+      @extend .text-section;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      padding-left: 20px;
+
+      li {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        color: #ffffff;
+
+        position: relative;
+        margin-bottom: 26px;
+
+        &::before {
+          content: "\2022";
+          position: absolute;
+          left: -20px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}

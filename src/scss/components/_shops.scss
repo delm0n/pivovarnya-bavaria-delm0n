@@ -1,0 +1,224 @@
+#shops {
+  .shops-bg {
+    &.nowebp {
+      background: url("/src/images/shops-bg.png") no-repeat;
+      background-size: cover;
+
+      @media (max-width: 992px) {
+        background: url("/src/images/shops-bg-mobile.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &.webp {
+      background: url("/build/images/shops-bg.webp") no-repeat;
+      background-size: cover;
+
+      @media (max-width: 992px) {
+        background: url("/build/images/shops-bg-mobile.webp") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  [class$="-ground-pane"] {
+    filter: invert(30%) sepia(90%) saturate(200%) hue-rotate(1deg)
+      brightness(70%) contrast(60%);
+    -ms-filter: invert(30%) sepia(90%) saturate(200%) hue-rotate(1deg)
+      brightness(70%) contrast(60%);
+    -webkit-filter: invert(30%) sepia(90%) saturate(200%) hue-rotate(1deg)
+      brightness(70%) contrast(60%);
+    -moz-filter: invert(30%) sepia(90%) saturate(200%) hue-rotate(1deg)
+      brightness(70%) contrast(60%);
+    -o-filter: invert(30%) sepia(90%) saturate(200%) hue-rotate(1deg)
+      brightness(70%) contrast(60%);
+  }
+
+  #shop-map {
+    height: 65vh;
+    max-height: 745px;
+  }
+
+  .shops-wrapper {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 130px auto;
+    padding-top: 60px;
+
+    @media (max-width: 1366px) {
+      grid-template-rows: auto auto;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      padding-top: 25px;
+    }
+
+    &__title-container {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      padding: 20px 0;
+      width: calc(100% + 20px);
+
+      @media (max-width: 992px) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-top: 0;
+        width: 100%;
+      }
+    }
+
+    &__img-container {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      margin-right: 50px;
+      align-self: end;
+
+      @media (min-width: 1291px) and (max-width: 1366px) {
+        margin-right: 35px;
+      }
+
+      @media (max-width: 992px) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-right: 0;
+      }
+    }
+
+    &__text-container {
+      grid-column: 2/4;
+      grid-row: 2/3;
+
+      @media (max-width: 992px) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+    }
+
+    &__title {
+      @extend .title-section-28;
+      color: #ffffff;
+
+      @media (max-width: 1160px) {
+        font-size: 26px;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 21px;
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &__text-title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      opacity: 0.75;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+        opacity: 1;
+      }
+    }
+
+    &__text-list {
+      display: flex;
+      column-gap: 80px;
+
+      @media (max-width: 1366px) {
+        column-gap: 35px;
+      }
+
+      @media (max-width: 1290px) {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      ul {
+        padding-left: 20px;
+
+        &:first-child {
+          margin-bottom: 0;
+        }
+
+        &:last-child {
+          margin-top: 0;
+        }
+
+        li {
+          @extend .text-section;
+
+          position: relative;
+          margin-bottom: 7px;
+          color: #c7c3c1;
+
+          @media (max-width: 1290px) {
+            flex-direction: column;
+            margin-bottom: 15px;
+          }
+
+          &::before {
+            content: "\2022";
+            position: absolute;
+            left: -20px;
+
+            font-size: 40px;
+            color: $main-yellow;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+
+    &__img {
+      &.nowebp {
+        background: url("/src/images/header-bar.png") no-repeat;
+        background-size: 100%;
+      }
+
+      &.webp {
+        background: url("/build/images/header-bar.webp") no-repeat;
+        background-size: 100%;
+      }
+
+      width: 360px;
+      height: 360px;
+      overflow: hidden;
+
+      @media (max-width: 1290px) {
+        height: 410px;
+      }
+
+      @media (max-width: 1150px) {
+        height: 480px;
+        width: 310px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 410px;
+        width: 250px;
+      }
+
+      @media (max-width: 992px) {
+        margin: 0 auto;
+      }
+
+      @media (max-width: 480px) {
+        height: 400px;
+        width: 100%;
+      }
+    }
+  }
+}

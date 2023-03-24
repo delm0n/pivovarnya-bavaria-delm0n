@@ -1,0 +1,123 @@
+#made {
+  .made-bg {
+    &.nowebp {
+      background: url("/src/images/made-bg.png") no-repeat;
+      background-position: bottom left;
+
+      @media (max-width: 1440px) {
+        background-size: contain;
+      }
+
+      @media (max-width: 425px) {
+        background: url("/src/images/made-bg-mobile.png") no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+      }
+    }
+
+    &.webp {
+      background: url("/build/images/made-bg.webp") no-repeat;
+      background-position: bottom left;
+
+      @media (max-width: 1440px) {
+        background-size: contain;
+      }
+
+      @media (max-width: 425px) {
+        background: url("/build/images/made-bg-mobile.webp") no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+      }
+    }
+  }
+
+  .made-wrapper {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 146px;
+    padding-bottom: 260px;
+
+    @media (max-width: 1280px) {
+      justify-content: flex-start;
+
+      width: 91%;
+      margin-top: 63px;
+      margin-left: 8%;
+      padding-bottom: 280px;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 0%;
+      padding-bottom: 220px;
+    }
+
+    @media (max-width: 425px) {
+      padding-bottom: 170px;
+    }
+
+    &__features {
+      // width: 50%;
+      max-width: 630px;
+
+      @media (max-width: 992px) {
+        max-width: 580px;
+      }
+
+      &-title {
+        @extend .title-section-28;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 32px;
+          font-size: 18px;
+        }
+      }
+
+      &-item {
+        display: flex;
+        gap: 23px;
+        align-items: flex-start;
+        margin-bottom: 35px;
+
+        @media (max-width: 768px) {
+          gap: 0px;
+          margin-bottom: 20px;
+        }
+
+        .features-item__img {
+          flex-shrink: 0;
+
+          svg {
+            circle {
+              fill: $main-yellow;
+            }
+
+            path {
+              fill: #000;
+            }
+
+            @media (max-width: 768px) {
+              transform: translate(-9px, -12px);
+
+              circle {
+                display: none;
+              }
+
+              path {
+                fill: $main-yellow;
+              }
+            }
+          }
+        }
+
+        .features-item__text {
+          @extend .text-section;
+        }
+      }
+    }
+  }
+}

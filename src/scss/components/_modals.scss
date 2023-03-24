@@ -1,0 +1,488 @@
+#modal-call {
+  @extend .modal-default;
+  max-width: calc(580px + 30px * 2);
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      @extend .input-default;
+      margin-top: 30px;
+
+      @media (max-width: 425px) {
+        margin-top: 20px;
+      }
+    }
+
+    label {
+      @extend .label-default;
+      // margin-top: 25px;
+    }
+  }
+
+  .button {
+    @extend .button;
+    width: 200px;
+    margin: 28px auto 18px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .modal-container {
+    @media (max-width: 475px) {
+      padding: 46px 18px 44px;
+      margin: 0 10px;
+    }
+  }
+
+  .modal-title {
+    @media (max-width: 768px) {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .modal-decr {
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+#order-success {
+  @extend .modal-default;
+  max-width: calc(580px + 30px * 2);
+
+  .modal-container {
+    // background: $texture;
+    // background-blend-mode: multiply, normal;
+
+    // &.webp {
+    //   background: $texture-webp;
+    //   background-blend-mode: multiply, normal;
+    // }
+
+    @media (max-width: 475px) {
+      padding: 34px 18px !important;
+      margin: 0 10px;
+    }
+  }
+
+  .modal-title {
+    @media (max-width: 475px) {
+      font-size: 21px;
+    }
+  }
+
+  .modal-thanks-decr {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  #mistake {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    border: none;
+    display: block;
+    background: none;
+    margin: 20px auto -10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      @extend .input-default;
+    }
+
+    label {
+      @extend .label-default;
+      margin-top: 25px;
+    }
+  }
+
+  .button {
+    width: 200px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 40px auto 0;
+  }
+}
+
+#modal-result {
+  @extend .modal-default;
+  max-width: calc(580px + 30px * 2);
+
+  .modal-result__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+#modal-present {
+  @extend .modal-default;
+  max-width: calc(280px + 30px * 2);
+
+  .modal-container {
+    padding: 20px 25px !important;
+  }
+
+  .fancybox-close-small {
+    right: 45px !important;
+    top: 13px !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .modal-present__title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  .modal-present__price {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 10px;
+      text-decoration-line: line-through;
+    }
+
+    color: #000000;
+  }
+}
+
+#modal-equipment {
+  @extend .modal-default;
+
+  @media (max-width: 500px) {
+    .modal-container {
+      padding: 46px 18px 44px;
+      margin: 0 10px;
+    }
+  }
+
+  .modal-desktop {
+    display: block;
+  }
+
+  .modal-mobile {
+    display: none;
+  }
+
+  p {
+    ul {
+      padding-left: 10px;
+      margin: 0 0 10px;
+
+      li {
+        @media (min-width: 769px) {
+          position: relative;
+
+          &::before {
+            content: "•";
+            position: absolute;
+            left: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modal-desktop {
+      display: none;
+    }
+
+    .modal-mobile {
+      display: block;
+    }
+
+    max-width: 500px !important;
+  }
+
+  // max-width: calc(280px + 30px * 2);
+
+  .modal-title {
+    text-align: left;
+    margin-bottom: 20px;
+
+    .title-mobile {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: inline;
+      }
+    }
+  }
+
+  .modal-mobile-decr {
+    display: none;
+
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: #333333;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+
+  .modal-mobile-img {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      margin-bottom: 17px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-equipment-row {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+
+    &__title {
+      .modal-equipment-col {
+        p {
+          font-weight: 800 !important;
+        }
+      }
+    }
+
+    .modal-equipment-col {
+      flex: 1 0 0;
+      width: 0;
+
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35px;
+        color: #000000;
+        // white-space: nowrap;
+      }
+
+      &__title {
+        flex-grow: 1.5;
+      }
+
+      li.desktop {
+        @media (max-width: 1280px) {
+          display: none;
+        }
+      }
+      li.mobile {
+        display: none;
+        @media (max-width: 1280px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .modal-mobile-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 22px;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  .modal-mobile-subtitle {
+    @extend .modal-mobile-text;
+    font-weight: 800;
+  }
+
+  .modal-equipment-row__mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      @extend .modal-mobile-text;
+      font-weight: 400;
+    }
+
+    .modal-equipment-col__mobile {
+      display: flex;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      margin-bottom: 5px;
+      justify-content: space-between;
+
+      &-title {
+        @extend .modal-mobile-text;
+        font-weight: 800 !important;
+        width: 100%;
+        border-bottom: 2px solid rgb(0, 0, 0);
+      }
+    }
+  }
+}
+
+#modal-tradition {
+  @extend .modal-default;
+  max-width: 1180px;
+
+  .modal-title {
+    text-align: left;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+
+    @media (max-width: 768px) {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .modal-container {
+      margin: 0 10px;
+      padding: 0 !important;
+    }
+  }
+
+  .modal-container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    @media (max-width: 1135px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .modal-tradition-bg {
+    background: url("/src/images/modal-tradition-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (max-width: 1135px) {
+      display: none;
+    }
+
+    .video-container {
+      width: 90%;
+      margin: 35px auto 0;
+
+      .video__link {
+        position: relative;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .yt-btn {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -40%) scale(0.85);
+          opacity: 0.8;
+          transition: all 0.45s;
+
+          svg {
+            width: 84px !important;
+            height: 77px !important;
+          }
+        }
+
+        &:hover {
+          .yt-btn {
+            opacity: 1;
+            transform: translate(-50%, -40%) scale(0.95);
+          }
+        }
+      }
+    }
+  }
+
+  .modal-tradition-content {
+    padding: 30px 40px 10px;
+
+    @media (max-width: 475px) {
+      padding: 30px 18px 10px;
+    }
+
+    p {
+      @extend .text-section;
+      color: #000;
+    }
+  }
+
+  .modal-tradition__comp {
+    padding: 3px 0 5px;
+
+    @media (max-width: 475px) {
+      padding: 5px 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    &-block {
+      // margin-bottom: 2px;
+    }
+    &-block-addish {
+      margin-top: 3px;
+    }
+  }
+
+  .modal-tradition__steps {
+    margin-bottom: 20px;
+    margin-top: 35px;
+    &-block {
+    }
+  }
+}

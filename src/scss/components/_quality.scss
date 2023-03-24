@@ -1,0 +1,256 @@
+#quality {
+  .subtitle {
+    br {
+      @media (min-width: 993px) {
+        display: none;
+      }
+
+      @media (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    max-width: calc(1412px + 20px + 20px);
+    padding-top: 30px;
+  }
+
+  .quality-bg {
+    &.nowebp {
+      background: url("/src/images/quality-bg.png") no-repeat;
+      background-size: cover;
+      background-position: top 50px center;
+      padding-bottom: 100px;
+
+      @media (max-width: 992px) {
+        background-position: top -20px center;
+        padding-bottom: 30px;
+      }
+    }
+
+    &.webp {
+      background: url("/build/images/quality-bg.webp") no-repeat;
+      background-size: cover;
+      background-position: top 50px center;
+      padding-bottom: 100px;
+
+      @media (max-width: 992px) {
+        background-position: top -20px center;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .row-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    @media (max-width: 1366px) {
+      gap: 40px;
+    }
+  }
+
+  .quality-swiper-pagination {
+    display: none;
+    @media (max-width: 1024px) {
+      position: static;
+      align-self: center;
+      justify-self: center;
+      grid-column: 3/4;
+      grid-row: 2/3;
+
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .swiper-pagination-bullet {
+        display: block;
+        opacity: 1;
+        padding: 0;
+
+        cursor: pointer;
+        border: 2px solid $main-yellow;
+        border-radius: 100%;
+        outline: none;
+        background: transparent;
+
+        height: 16px;
+        width: 16px;
+
+        &-active {
+          background: $main-yellow;
+        }
+      }
+    }
+  }
+
+  .quality-wrapper {
+    .swiper-wrapper {
+      @media (min-width: 1025px) {
+        display: block !important;
+      }
+    }
+  }
+
+  .quality-swiper-button-prev {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      grid-row: 2/3;
+      background: url("/src/images/arrow-slider.svg") no-repeat;
+      background-position: center center;
+      height: 60px;
+      width: 50px;
+      margin-top: 0;
+      grid-column: 2/3;
+      position: static;
+      align-self: center;
+      justify-self: center;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-left: -20px;
+    }
+  }
+
+  .quality-swiper-button-next {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      grid-column: 4/5;
+      transform: rotate(180deg);
+      position: static;
+      align-self: center;
+      justify-self: center;
+      grid-row: 2/3;
+      background: url("/src/images/arrow-slider.svg") no-repeat;
+      background-position: center center;
+      height: 60px;
+      width: 50px;
+      margin-top: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-right: -20px;
+    }
+  }
+
+  .quality-content__container {
+    @media (max-width: 1024px) {
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .row-title {
+      @extend .row-class;
+      margin: 40px 0 0;
+
+      @media (max-width: 1024px) {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 130px;
+        width: 100%;
+        max-width: 510px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px 0;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 420px;
+      }
+
+      @media (max-width: 580px) {
+        gap: 130px;
+      }
+
+      .bavaria,
+      .chine {
+        border-bottom: 2px solid $main-yellow;
+
+        p {
+          font-family: "Roboto Slab";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 29px;
+          color: $main-yellow;
+          padding-bottom: 10px;
+
+          @media (max-width: 768px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  .row-diff {
+    display: block !important;
+
+    &__block {
+      @extend .row-class;
+
+      @media (max-width: 1024px) {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 1fr;
+        gap: 0;
+        max-width: 510px;
+        width: 100%;
+        margin: 50px auto 0;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 420px;
+        grid-template-rows: 165px 1fr;
+      }
+
+      // @media (max-width: 580px) {
+      //   gap: 0px;
+      // }
+    }
+
+    .bavaria,
+    .chine {
+      padding: 15px 0;
+      display: flex;
+      gap: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      transition: border-bottom 0.5s;
+
+      &:hover {
+        border-bottom-color: #ffb7008a;
+      }
+
+      @media (max-width: 1024px) {
+        border-bottom: none;
+      }
+
+      &-icon {
+      }
+
+      &-text {
+        max-width: 620px;
+
+        p {
+          @extend .text-section;
+        }
+      }
+    }
+  }
+}

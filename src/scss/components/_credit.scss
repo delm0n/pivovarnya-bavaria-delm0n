@@ -1,0 +1,300 @@
+#credit {
+  .title {
+    text-align: center;
+  }
+
+  .container {
+    padding-top: 60px;
+
+    @media (max-width: 992px) {
+      padding-top: 30px;
+    }
+  }
+
+  .credit-bg {
+    &.nowebp {
+      background: url("/src/images/credit-bg-human.png") no-repeat,
+        linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0) 61.72%,
+          #000000 89.45%
+        ),
+        url("/src/images/credit-bg.png") no-repeat;
+      background-size: 1921px, auto, cover;
+      background-position: bottom 50px center, top center, top -50px center;
+
+      @media (max-width: 1920px) {
+        background-position: bottom 50px right, top center, top -50px center;
+      }
+
+      @media (max-width: 1580px) {
+        background-size: 1770px, auto, cover;
+      }
+
+      @media (max-width: 1366px) {
+        background-size: 1480px, auto, cover;
+      }
+
+      @media (max-width: 1080px) {
+        background-size: 1400px, auto, cover;
+      }
+
+      @media (max-width: 992px) {
+        background: url("/src/images/header-bar.png") no-repeat,
+          linear-gradient(180deg, rgba(0, 0, 0, 0.24) -3.32%, #000000 89.45%),
+          url("/src/images/credit-bg.png") no-repeat;
+        background-position: top 240px center, center, center center;
+        background-size: 375px, cover, cover;
+      }
+
+      @media (max-width: 768px) {
+        background-position: top 110px center, center, center center;
+        background-size: 300px, cover, cover;
+      }
+    }
+
+    &.webp {
+      background: url("/build/images/credit-bg-human.webp") no-repeat,
+        linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0) 61.72%,
+          #000000 89.45%
+        ),
+        url("/build/images/credit-bg.webp") no-repeat;
+      background-size: 1921px, auto, cover;
+      background-position: bottom 50px center, top center, top -50px center;
+
+      @media (max-width: 1920px) {
+        background-position: bottom 50px right, top center, top -50px center;
+      }
+
+      @media (max-width: 1580px) {
+        background-size: 1770px, auto, cover;
+      }
+
+      @media (max-width: 1366px) {
+        background-size: 1480px, auto, cover;
+      }
+
+      @media (max-width: 1080px) {
+        background-size: 1400px, auto, cover;
+      }
+
+      @media (max-width: 992px) {
+        background: url("/build/images/header-bar.webp") no-repeat,
+          linear-gradient(180deg, rgba(0, 0, 0, 0.24) -3.32%, #000000 89.45%),
+          url("/build/images/credit-bg.webp") no-repeat;
+        background-position: top 240px center, center, center center;
+        background-size: 375px, cover, cover;
+      }
+
+      @media (max-width: 768px) {
+        background-position: top 110px center, center, center center;
+        background-size: 300px, cover, cover;
+      }
+    }
+
+    .credit-wrapper {
+      margin-left: 15%;
+      padding-top: 140px;
+      padding-bottom: 320px;
+      width: max-content;
+
+      @media (max-width: 1366px) {
+        padding-bottom: 250px;
+        padding-top: 70px;
+        margin-left: 8%;
+      }
+
+      @media (max-width: 1080px) {
+        margin-left: 5%;
+      }
+
+      @media (max-width: 992px) {
+        margin: 355px auto 0;
+        padding-bottom: 40px;
+      }
+
+      @media (max-width: 768px) {
+        margin: 200px auto 0;
+      }
+    }
+
+    .credit-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+
+      @media (max-width: 992px) {
+        gap: 10px;
+        width: max-content;
+        margin: 0 auto;
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: 992px) {
+          gap: 10px;
+        }
+
+        .circle {
+          border-radius: 100%;
+          width: 61px;
+          height: 61px;
+          justify-content: center;
+          font-family: "Merriweather";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 38px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          background: white;
+          color: #4a2818;
+
+          @media (max-width: 992px) {
+            color: #000000;
+            background: #ffb800;
+            font-size: 22px;
+            line-height: 24px;
+            width: 45px;
+            height: 45px;
+          }
+
+          @media (max-width: 768px) {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        p {
+          max-width: 510px;
+          font-family: "Merriweather";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 35px;
+          color: #ffffff;
+
+          @media (max-width: 1150px) {
+            font-size: 24px;
+            line-height: 32px;
+          }
+
+          @media (max-width: 992px) {
+            max-width: 380px;
+            padding-top: 10px;
+            color: $main-yellow;
+
+            font-size: 22px;
+            line-height: 32px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 23px;
+
+            max-width: 315px;
+          }
+
+          @media (max-width: 580px) {
+            max-width: 220px;
+          }
+        }
+      }
+    }
+
+    .credit-offer {
+      margin-top: 35px;
+      display: flex;
+      gap: 35px;
+      flex-direction: column-reverse;
+
+      @media (max-width: 992px) {
+        gap: 25px;
+        margin-top: 25px;
+      }
+
+      a.button {
+        font-size: 24px;
+        line-height: 34px;
+        width: 300px;
+        padding: 30px 0;
+
+        @media (max-width: 768px) {
+          width: 280px;
+          padding: 13px 0;
+          font-size: 16px;
+          line-height: 21px;
+          margin: 0 auto;
+        }
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // @media (max-width: 992px) {
+
+        // }
+
+        @media (max-width: 768px) {
+          max-width: 280px;
+
+          justify-content: space-between;
+          align-items: start;
+          width: 100%;
+          margin: 0 auto;
+          box-sizing: border-box;
+        }
+
+        .old {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-decoration-line: line-through;
+          margin-top: 5px;
+          color: #ffffff;
+
+          @media (max-width: 768px) {
+            font-size: 20px;
+            line-height: 23px;
+          }
+        }
+
+        .new {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 47px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+
+          color: #ffffff;
+
+          @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+  }
+}

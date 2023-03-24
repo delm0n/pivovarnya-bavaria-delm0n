@@ -1,0 +1,142 @@
+body {
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#app,
+footer {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.load {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spinner {
+  from {
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load .loader {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ffb800;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+
+.fancybox-active {
+  overflow: hidden;
+  margin-right: 5px !important;
+}
+
+*::selection {
+  background: $main-yellow;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dededaab;
+  z-index: 1;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #000;
+}
+
+// перебивание fancybox-стилей
+.is-close {
+  background: url("/src/images/btn-close.png") no-repeat !important;
+  width: 60px !important;
+  height: 60px !important;
+  top: -29px !important;
+  background-size: contain !important;
+  opacity: 1 !important;
+  transition: all 0.5s !important;
+  top: -30px !important;
+
+  &:hover {
+    transform: scale(1.05) !important;
+  }
+
+  svg {
+    display: none !important;
+  }
+}
+
+.fancybox__slide {
+  @media (max-width: 425px) {
+    padding: 48px 0px 8px !important;
+  }
+}
+
+.has-video {
+  .is-close {
+    display: none !important;
+  }
+}
+
+[v-cloak] {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+[v-cloak] > div {
+  display: none;
+}
+
+[v-cloak] .loader {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ffb800;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+
+img {
+  transition: opacity 0.4s;
+}
+
+img[lazy="loading"] {
+  opacity: 0;
+}
+
+img[lazy="loaded"] {
+  opacity: 1;
+}
+
+.will-change--active {
+  will-change: auto;
+}

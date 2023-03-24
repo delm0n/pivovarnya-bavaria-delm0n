@@ -1,0 +1,135 @@
+#pivovarov {
+  .pivovarov-bg {
+    background: url("/src/images/pivovarov-human.png") no-repeat, url("/src/images/pivovarov-bg.png") no-repeat;
+    background-position: left -200px bottom -80px, left center;
+    background-size: 1130px, cover;
+    height: 1000px;
+
+    @media (max-width:1366px) {
+      background-size: 880px, cover;
+      height: 820px;
+    }
+
+    @media (max-width:992px) {
+      background: url("/src/images/pivovarov-human.png") no-repeat, url("/src/images/pivovarov-bg.png") no-repeat;
+      background-position: center bottom -80px, left center;
+      background-size: 730px, cover;
+      height: auto;
+    }
+
+
+    &.webp {
+      background: url("/src/images/pivovarov-human.webp") no-repeat, url("/src/images/pivovarov-bg.webp") no-repeat;
+      background-position: left -200px bottom -80px, left center;
+      background-size: 1130px, cover;
+      height: 1000px;
+
+      @media (max-width:1366px) {
+        background-size: 880px, cover;
+        height: 820px;
+      }
+
+      @media (max-width:992px) {
+        background: url("/src/images/pivovarov-human.webp") no-repeat, url("/src/images/pivovarov-bg.webp") no-repeat;
+        background-position: center bottom -80px, left center;
+        background-size: 730px, cover;
+        height: auto;
+      }
+    }
+  }
+
+  .container {
+    padding-top: 30px;
+  }
+
+  .show-hide-block {
+    display: none;
+
+    @media (max-width:1280px) {
+      display: block;
+    }
+  }
+
+  .show-hide-inline {
+    display: none;
+
+    @media (max-width:1280px) {
+      display: inline;
+    }
+  }
+
+  .hide-show-block {
+    display: block;
+
+    @media (max-width:1280px) {
+      display: none;
+    }
+  }
+
+
+  .pivovarov-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 140px;
+
+    @media (max-width:1366px) {
+      margin-top: 75px;
+    }
+
+    @media (max-width:992px) {
+      margin-top: 0;
+      height: 500px;
+      justify-content: center;
+    }
+
+
+    &__container {
+      width: 50%;
+
+      @media (max-width:992px) {
+        max-width: 500px;
+        width: 100%;
+        margin: auto auto 0;
+      }
+    }
+
+    &__text {
+
+      .hide-text {
+        display: inline-block;
+      }
+
+      p {
+        @extend .text-section;
+      }
+
+      .collapse-toggle {
+        p {
+          cursor: pointer;
+          text-decoration-line: underline;
+          color: $main-yellow;
+          margin-top: 20px;
+        }
+      }
+    }
+
+
+    &__img {
+      margin-top: 20px;
+
+      @media (max-width:1366px) {
+        img {
+          max-width: 300px;
+          width: 100%;
+        }
+      }
+
+      @media (max-width:992px) {
+        display: none;
+      }
+    }
+
+
+  }
+}
