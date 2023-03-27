@@ -1,3 +1,4 @@
-# pivovarnya-bavaria-delm0n HELICON 2023
+# pivovarnya-bavaria HELICON 2023
 
-https://pivovarnya-bavaria.ru/
+pages: https://delm0n.github.io/pivovarnya-bavaria-delm0n/
+now: https://pivovarnya-bavaria.ru/
