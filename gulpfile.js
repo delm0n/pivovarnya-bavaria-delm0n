@@ -121,11 +121,7 @@ function vueTask() {
 }
 function vueWatch() {
   gulp.watch(
-    [
-      "src/vue/components/*.vue",
-      "src/vue/helpers/*.vue",
-      "src/vue/store.js",
-    ],
+    ["src/vue/components/*.vue", "src/vue/helpers/*.vue", "src/vue/store.js"],
     gulp.series(vueTask)
   );
 }

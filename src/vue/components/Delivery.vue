@@ -76,7 +76,10 @@
               <div class="icons-container">
                 <div class="icons-wrapper">
                   <picture>
-                    <source srcset="build/images/delivery-kit.webp" />
+                    <source
+                      srcset="build/images/delivery-kit.webp"
+                      type="image/webp"
+                    />
                     <img
                       v-lazy="{
                         src: 'src/images/delivery-kit.png',
@@ -87,7 +90,10 @@
                     />
                   </picture>
                   <picture>
-                    <source srcset="build/images/delivery-dpd.webp" />
+                    <source
+                      srcset="build/images/delivery-dpd.webp"
+                      type="image/webp"
+                    />
                     <img
                       v-lazy="{
                         src: 'src/images/delivery-dpd.png',
@@ -98,7 +104,10 @@
                     />
                   </picture>
                   <picture>
-                    <source srcset="build/images/delivery-cdek.webp" />
+                    <source
+                      srcset="build/images/delivery-cdek.webp"
+                      type="image/webp"
+                    />
                     <img
                       v-lazy="{
                         src: 'src/images/delivery-cdek.png',
@@ -114,7 +123,10 @@
               <div class="car-container">
                 <div class="car-wrapper">
                   <picture>
-                    <source srcset="build/images/car-bg.webp" />
+                    <source
+                      srcset="build/images/car-bg.webp"
+                      type="image/webp"
+                    />
                     <img
                       v-lazy="{
                         src: 'src/images/car-bg.png',

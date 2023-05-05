@@ -17,6 +17,7 @@
                   <picture>
                     <source
                       :srcset="'build/images/tradition-' + beer.img + '.webp'"
+                      type="image/webp"
                     />
                     <img
                       :src="'src/images/tradition-' + beer.img + '.png'"

@@ -10,7 +10,10 @@
             <div class="control-item">
               <div class="control-item__img control-item__img-anim">
                 <picture>
-                  <source srcset="build/images/equipment-lid.webp" />
+                  <source
+                    srcset="build/images/equipment-lid.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-lid.png',
@@ -45,7 +48,10 @@
             <div class="control-item">
               <div class="control-item__img control-item__img-anim">
                 <picture>
-                  <source srcset="build/images/equipment-plank.webp" />
+                  <source
+                    srcset="build/images/equipment-plank.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-plank.png',
@@ -79,7 +85,10 @@
             <div class="control-item">
               <div class="control-item__img control-item__img-anim">
                 <picture>
-                  <source srcset="build/images/equipment-sieve-1.webp" />
+                  <source
+                    srcset="build/images/equipment-sieve-1.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-sieve-1.png',
@@ -90,7 +99,10 @@
                   />
                 </picture>
                 <picture>
-                  <source srcset="build/images/equipment-sieve-2.webp" />
+                  <source
+                    srcset="build/images/equipment-sieve-2.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-sieve-2.png',
@@ -101,7 +113,10 @@
                   />
                 </picture>
                 <picture>
-                  <source srcset="build/images/equipment-sieve-3.webp" />
+                  <source
+                    srcset="build/images/equipment-sieve-3.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-sieve-3.png',
@@ -280,7 +295,10 @@
             <div class="control-item control-item-kettle">
               <div class="control-item__img">
                 <picture>
-                  <source srcset="build/images/equipment-kettle.webp" />
+                  <source
+                    srcset="build/images/equipment-kettle.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/equipment-kettle.png',
@@ -297,9 +315,7 @@
                 href="#modal-equipment"
                 draggable="false"
                 data-fancybox
-                class="
-                  control-item__row-container control-item__row-container-4
-                "
+                class="control-item__row-container control-item__row-container-4"
               >
                 <EquipmentArrow
                   titleDesktop="Заторный бак"
@@ -318,9 +334,7 @@
                 href="#modal-equipment"
                 draggable="false"
                 data-fancybox
-                class="
-                  control-item__row-container control-item__row-container-5
-                "
+                class="control-item__row-container control-item__row-container-5"
               >
                 <EquipmentArrow
                   titleDesktop="Сусловарочный котел"
@@ -339,9 +353,7 @@
                 href="#modal-equipment"
                 draggable="false"
                 data-fancybox
-                class="
-                  control-item__row-container control-item__row-container-6
-                "
+                class="control-item__row-container control-item__row-container-6"
               >
                 <EquipmentArrow
                   titleDesktop="Кран для слива сусла"
@@ -360,9 +372,7 @@
                 href="#modal-equipment"
                 draggable="false"
                 data-fancybox
-                class="
-                  control-item__row-container control-item__row-container-7
-                "
+                class="control-item__row-container control-item__row-container-7"
               >
                 <EquipmentArrow
                   titleDesktop="Блок управления"
@@ -408,6 +418,7 @@
                   :srcset="
                     'build/images/equipment-window-' + equipment.img + '.webp'
                   "
+                  type="image/webp"
                 />
                 <img
                   :onload="onloadImg"
@@ -423,7 +434,10 @@
           <div class="equipment-footer__item">
             <div class="equipment-footer__item-img">
               <picture>
-                <source srcset="build/images/equipment-ten.webp" />
+                <source
+                  srcset="build/images/equipment-ten.webp"
+                  type="image/webp"
+                />
                 <img
                   v-lazy="{
                     src: 'src/images/equipment-ten.png',
@@ -457,7 +471,10 @@
           <div class="equipment-footer__item">
             <div class="equipment-footer__item-img">
               <picture>
-                <source srcset="build/images/equipment-nasos.webp" />
+                <source
+                  srcset="build/images/equipment-nasos.webp"
+                  type="image/webp"
+                />
                 <img
                   v-lazy="{
                     src: 'src/images/equipment-nasos.png',
@@ -503,6 +520,7 @@
               :srcset="
                 'build/images/equipment-window-' + equipment.img + '.webp'
               "
+              type="image/webp"
             />
             <img
               :onload="onloadImg"

@@ -19,6 +19,7 @@
                       :srcset="
                         'build/images/destiny-' + destiny.imgName + '.webp'
                       "
+                      type="image/webp"
                     />
                     <img
                       :src="'src/images/destiny-' + destiny.imgName + '.png'"
@@ -47,8 +48,6 @@
     </div>
   </section>
 </template>
-
-
 
 <script>
 import { Swiper, Navigation, Pagination } from "swiper";

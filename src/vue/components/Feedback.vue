@@ -17,7 +17,10 @@
               class="slider-wrapper__img"
             >
               <picture>
-                <source :srcset="'build/images/' + photo.name + '.webp'" />
+                <source
+                  :srcset="'build/images/' + photo.name + '.webp'"
+                  type="image/webp"
+                />
                 <img
                   :src="'src/images/' + photo.name + '.png'"
                   alt="Отзывы клиентов на пивоварню Bavaria"

@@ -22,6 +22,7 @@
                       :srcset="
                         'build/images/control-' + control.imgName + '.webp'
                       "
+                      type="image/webp"
                     />
                     <img
                       :src="'src/images/control-' + control.imgName + '.png'"

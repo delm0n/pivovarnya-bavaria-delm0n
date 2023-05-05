@@ -22,16 +22,19 @@
                   :srcset="
                     'build/images/photo-' + photo.desktop + '-preview.webp'
                   "
+                  type="image/webp"
                   media="(min-width: 993px)"
                 />
                 <source
                   :srcset="'src/images/photo-' + photo.desktop + '-preview.png'"
                   media="(min-width: 993px)"
+                  type="image/png"
                 />
                 <source
                   :srcset="
                     'build/images/photo-' + photo.mobile + '-preview.webp'
                   "
+                  type="image/webp"
                 />
 
                 <img

@@ -50,7 +50,10 @@
                 v-bind:class="'consultation-img ' + $store.state.webpSupport"
               >
                 <picture>
-                  <source srcset="build/images/consultation-phone.webp" />
+                  <source
+                    srcset="build/images/consultation-phone.webp"
+                    type="image/webp"
+                  />
                   <img
                     class="phone"
                     v-lazy="{
