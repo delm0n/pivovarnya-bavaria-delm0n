@@ -169,6 +169,7 @@
     </footer>
 
     <!-- fancybox -->
+    <link rel="stylesheet" href="static/styles/fancybox-4.min.css" />
     <script
       defer
       onload="fancyInit()"
@@ -176,6 +177,7 @@
     ></script>
     <script>
       function fancyInit() {
+        console.log(1);
         Fancybox.bind("[data-fancybox]", {});
         Fancybox.bind("[data-fancybox='feedback']", {});
         Fancybox.bind("[data-fancybox='photo']", {});
