@@ -5,7 +5,7 @@
         <div class="patent-wrapper">
           <div class="patent-wrapper__img">
             <picture>
-              <source srcset="build/images/patent-img.webp" />
+              <source srcset="build/images/patent-img.webp" type="image/webp" />
               <img
                 src="src/images/patent-img.png"
                 class="preview"
@@ -70,7 +70,10 @@
                     </div>
 
                     <picture>
-                      <source srcset="build/images/patent-item1.webp" />
+                      <source
+                        srcset="build/images/patent-item1.webp"
+                        type="image/webp"
+                      />
                       <img
                         src="src/images/patent-item1.png"
                         class="preview"
@@ -123,7 +126,10 @@
                     </div>
 
                     <picture>
-                      <source srcset="build/images/patent-item2.webp" />
+                      <source
+                        srcset="build/images/patent-item2.webp"
+                        type="image/webp"
+                      />
                       <img
                         v-lazy="{
                           src: 'src/images/patent-item2.png',

@@ -72,7 +72,10 @@
               </div>
               <div class="wifi-wrapper__img-block__img">
                 <picture>
-                  <source srcset="build/images/wifi-blocknowifi.webp" />
+                  <source
+                    srcset="build/images/wifi-blocknowifi.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/wifi-blocknowifi.png',
@@ -92,7 +95,10 @@
               </div>
               <div class="wifi-wrapper__img-block__img">
                 <picture>
-                  <source srcset="build/images/wifi-blockwifi.webp" />
+                  <source
+                    srcset="build/images/wifi-blockwifi.webp"
+                    type="image/webp"
+                  />
                   <img
                     v-lazy="{
                       src: 'src/images/wifi-blockwifi.png',

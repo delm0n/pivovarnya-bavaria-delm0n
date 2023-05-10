@@ -5,7 +5,7 @@ import VueLazyLoad from "vue3-lazyload";
 import store from "./store";
 
 //порядок компонентов на странице и их асинхронная подгрузка
-import App from "./components/App.vue";
+import App from "./App.vue";
 
 const app = createApp({
   extends: App,

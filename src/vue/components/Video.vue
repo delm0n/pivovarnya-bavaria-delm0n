@@ -14,7 +14,10 @@
         >
           <div class="video-item__img">
             <picture>
-              <source srcset="build/images/video-preview.webp" />
+              <source
+                srcset="build/images/video-preview.webp"
+                type="image/webp"
+              />
               <img
                 v-lazy="{
                   src: 'src/images/video-preview.png',
@@ -52,12 +55,17 @@
                   <source
                     srcset="build/images/video-moisture.webp"
                     media="(min-width: 861px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="src/images/video-moisture.png"
                     media="(min-width: 861px)"
+                    type="image/png"
                   />
-                  <source srcset="build/images/video-moisture-mobile.webp" />
+                  <source
+                    srcset="build/images/video-moisture-mobile.webp"
+                    type="image/webp"
+                  />
                   <img
                     src="src/images/video-moisture-mobile.png"
                     alt="пивоварня Bavaria влагозащита"

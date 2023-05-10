@@ -42,14 +42,17 @@
                         :srcset="
                           'build/images/' + model.imgWifi_mobile + '.webp'
                         "
+                        type="image/webp"
                         media="(max-width: 992px)"
                       />
                       <source
                         :srcset="'src/images/' + model.imgWifi_mobile + '.png'"
                         media="(max-width: 992px)"
+                        type="image/png"
                       />
                       <source
                         :srcset="'build/images/' + model.imgWifi + '.webp'"
+                        type="image/webp"
                       />
                       <Transition name="left">
                         <img
@@ -69,15 +72,18 @@
                           'build/images/' + model.imgNoWifi_mobile + '.webp'
                         "
                         media="(max-width: 992px)"
+                        type="image/webp"
                       />
                       <source
                         :srcset="
                           'src/images/' + model.imgNoWifi_mobile + '.png'
                         "
                         media="(max-width: 992px)"
+                        type="image/png"
                       />
                       <source
                         :srcset="'build/images/' + model.imgNoWifi + '.webp'"
+                        type="image/webp"
                       />
                       <Transition name="right">
                         <img

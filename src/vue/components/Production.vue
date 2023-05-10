@@ -22,6 +22,7 @@
                         production.imgName +
                         '.webp'
                       "
+                      type="image/webp"
                     />
                     <img
                       :src="'src/images/result-' + production.imgName + '.png'"

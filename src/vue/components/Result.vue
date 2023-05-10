@@ -28,6 +28,7 @@
                       :srcset="
                         'build/images/result-' + result.imgName + '.webp'
                       "
+                      type="image/webp"
                     />
                     <img
                       :src="'src/images/result-' + result.imgName + '.png'"
@@ -41,12 +42,17 @@
                     <source
                       srcset="build/images/result-box-bg.webp"
                       media="(min-width: 993px)"
+                      type="image/webp"
                     />
                     <source
                       srcset="src/images/result-box-bg.png"
                       media="(min-width: 993px)"
+                      type="image/png"
                     />
-                    <source srcset="build/images/result-box-bg-mobile.webp" />
+                    <source
+                      srcset="build/images/result-box-bg-mobile.webp"
+                      type="image/webp"
+                    />
                     <img
                       v-lazy="{
                         src: 'src/images/result-box-bg-mobile.png',

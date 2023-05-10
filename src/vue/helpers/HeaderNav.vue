@@ -6,9 +6,17 @@
         v-on:click="scrollToSection('#header-main')"
       >
         <picture>
-          <source srcset="build/images/logo.webp" media="(min-width: 993px)" />
-          <source srcset="src/images/logo.png" media="(min-width: 993px)" />
-          <source srcset="build/images/logo-mobile.webp" />
+          <source
+            srcset="build/images/logo.webp"
+            media="(min-width: 993px)"
+            type="image/webp"
+          />
+          <source
+            srcset="src/images/logo.png"
+            media="(min-width: 993px)"
+            type="image/png"
+          />
+          <source srcset="build/images/logo-mobile.webp" type="image/webp" />
           <img
             class="logo-img"
             src="src/images/logo-mobile.png"

@@ -37,7 +37,7 @@
               </a>
 
               <!-- <picture>
-                <source srcset="build/images/header-bar.webp" />
+                <source srcset="build/images/header-bar.webp"  type="image/webp" />
                 <img
                   class="bar"
                   src="src/images/header-bar.png"
@@ -59,7 +59,7 @@
 
               <div draggable="false" class="desktopRefer">
                 <picture>
-                  <source srcset="build/images/bant.webp" />
+                  <source srcset="build/images/bant.webp" type="image/webp" />
                   <img
                     class="bant"
                     src="src/images/bant.png"
@@ -76,7 +76,7 @@
                 aria-label="Подарок к пивоварне Bavaria"
               >
                 <picture>
-                  <source srcset="build/images/bant.webp" />
+                  <source srcset="build/images/bant.webp" type="image/webp" />
                   <img
                     class="bant"
                     src="src/images/bant.png"
@@ -230,7 +230,7 @@
     </div>
   </header>
 </template>
-   
+
 <script>
 import HeaderNav from "../helpers/HeaderNav.vue";
 import buttonAnimated from "../mixins/buttonAnimated";
@@ -409,4 +409,4 @@ export default {
     HeaderNav,
   },
 };
-</script>  
+</script>

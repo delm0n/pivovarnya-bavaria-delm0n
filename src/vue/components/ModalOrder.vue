@@ -4,7 +4,7 @@
       <div class="modal-order__wrapper">
         <div class="modal-order__wrapper-img">
           <picture>
-            <source srcset="build/images/modal-bg.webp" />
+            <source srcset="build/images/modal-bg.webp" type="image/webp" />
             <img
               v-lazy="{
                 src: 'src/images/modal-bg.png',
