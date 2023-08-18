@@ -39,7 +39,7 @@
   .tradition-swiper-button-prev {
     @extend .swiper-button-prev;
     @media (min-width: 993px) {
-      background: url("/src/images/arrow-slider-big.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-big.svg") no-repeat;
       background-position: center center;
       width: 60px;
       position: absolute;
@@ -52,7 +52,7 @@
   .tradition-swiper-button-next {
     @extend .swiper-button-next;
     @media (min-width: 993px) {
-      background: url("/src/images/arrow-slider-big.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-big.svg") no-repeat;
       background-position: center center;
       width: 60px;
       position: absolute;

@@ -79,7 +79,7 @@
 
   .patent-swiper-button-prev {
     @media (max-width: 768px) {
-      background: url("/src/images/arrow-slider-black.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-black.svg") no-repeat;
       background-position: center center;
       grid-column: 2/3;
       &::after {
@@ -92,7 +92,7 @@
     @media (max-width: 768px) {
       grid-column: 4/5;
       transform: rotate(180deg);
-      background: url("/src/images/arrow-slider-black.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-black.svg") no-repeat;
       background-position: center center;
 
       &::after {

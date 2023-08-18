@@ -16,7 +16,7 @@
   .feedback-swiper-button-prev {
     @extend .swiper-button-prev;
     @media (min-width: 1280px) {
-      background: url("/src/images/arrow-slider-big.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-big.svg") no-repeat;
       background-position: center center;
       width: 60px;
       position: absolute;
@@ -29,7 +29,7 @@
   .feedback-swiper-button-next {
     @extend .swiper-button-next;
     @media (min-width: 1280px) {
-      background: url("/src/images/arrow-slider-big.svg") no-repeat;
+      background: url("../../src/images/arrow-slider-big.svg") no-repeat;
       background-position: center center;
       width: 60px;
       position: absolute;
