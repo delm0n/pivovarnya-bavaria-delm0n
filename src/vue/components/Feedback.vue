@@ -24,6 +24,7 @@
                 <img
                   :src="'src/images/' + photo.name + '.png'"
                   alt="Отзывы клиентов на пивоварню Bavaria"
+                  loading="lazy"
                 />
               </picture>
             </a>
@@ -74,14 +75,13 @@ export default {
     const swiper = new Swiper(".feedback-wrapper", {
       spaceBetween: 30,
       slidesPerView: 2,
-
+      lazy: true,
       slidesPerGroup: 1,
       loop: true,
       effect: "fade",
       fadeEffect: {
         crossFade: true,
       },
-      //:loop-fill-group-with-blank="true"
       navigation: {
         nextEl: ".feedback-swiper-button-next",
         prevEl: ".feedback-swiper-button-prev",
@@ -114,21 +114,6 @@ export default {
       },
       modules: [Navigation, Pagination],
     });
-
-    // ScrollTrigger.create({
-    //   trigger: "#feedback",
-    //   once: true,
-    //   onEnter: () => {
-    //     if (window.innerWidth >= 993) {
-    //       gsap.from("#feedback" + " .title", {
-    //         opacity: 0,
-    //         duration: 1.4,
-    //         stagger: 0.3,
-    //         delay: 0.6,
-    //       });
-    //     }
-    //   },
-    // });
   },
 };
 </script>
