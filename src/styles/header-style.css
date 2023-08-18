@@ -615,7 +615,7 @@ h5 {
   margin: 0 30px;
 }
 .modal-default .modal-container.nowebp {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
   background-blend-mode: multiply, normal;
 }
 .modal-default .modal-container.webp {
@@ -2146,7 +2146,7 @@ img[lazy=loaded] {
   padding: 30px;
 }
 #features .features-bg.nowebp {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
   background-blend-mode: multiply, normal;
 }
 #features .features-bg.webp {

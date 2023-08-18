@@ -255,7 +255,7 @@
   margin: 0 30px;
 }
 .modal-default .modal-container.nowebp, #modal-order .modal-container.nowebp, #modal-tradition .modal-container.nowebp, #modal-equipment .modal-container.nowebp, #modal-present .modal-container.nowebp, #modal-result .modal-container.nowebp, #order-success .modal-container.nowebp, #modal-call .modal-container.nowebp {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
   background-blend-mode: multiply, normal;
 }
 .modal-default .modal-container.webp, #modal-order .modal-container.webp, #modal-tradition .modal-container.webp, #modal-equipment .modal-container.webp, #modal-present .modal-container.webp, #modal-result .modal-container.webp, #order-success .modal-container.webp, #modal-call .modal-container.webp {
@@ -869,7 +869,7 @@
   }
 }
 #modal-tradition .modal-tradition-bg {
-  background: url("/src/images/modal-tradition-bg.png") no-repeat;
+  background: url("../../src/images/modal-tradition-bg.png") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3306,7 +3306,7 @@ button.swiper-pagination-bullet {
   }
 }
 #stages .stages-container {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: url("/build/images/paper-texture-2.webp"), #f2e7c9;
   background-blend-mode: multiply, normal;
   padding: 57px;
   margin: 0 auto;
@@ -3520,7 +3520,7 @@ button.swiper-pagination-bullet {
   padding: 30px;
 }
 #patent .patent-bg.nowebp {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
   background-blend-mode: multiply, normal;
 }
 @media (max-width: 475px) {
@@ -4812,7 +4812,7 @@ button.swiper-pagination-bullet {
   box-sizing: border-box;
 }
 #order .order-wrapper__form.nowebp {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
 }
 #order .order-wrapper__form.webp {
   background: url("/build/images/paper-texture-2.webp"), #f2e7c9;
@@ -5915,7 +5915,7 @@ button.swiper-pagination-bullet {
   }
 }
 #consultation .consultation-block-bg {
-  background: url("/src/images/paper-texture-2.png"), #f2e7c9;
+  background: #f2e7c9;
   background-blend-mode: multiply, normal;
   padding: 30px;
   position: relative;
