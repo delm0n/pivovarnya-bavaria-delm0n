@@ -1740,7 +1740,7 @@ button.swiper-pagination-bullet {
 #result .result-swiper-button-next,
 #destiny .destiny-swiper-button-next {
   grid-row: 2/3;
-  background: url(/src/images/arrow-slider.svg) no-repeat;
+  background: url("../../src/images/arrow-slider.svg") no-repeat;
   background-position: center center;
   height: 60px;
   width: 50px;
@@ -2529,7 +2529,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 1280px) {
   #equipment .equipment-wrapper__controls .control-item__row .area-img {
     opacity: 1;
-    background: url("/src/images/equipment-area.svg") no-repeat;
+    background: url("../../src/images/equipment-area.svg") no-repeat;
     background-position: center center;
   }
 }
@@ -3593,7 +3593,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 768px) {
   #patent .patent-swiper-button-prev {
-    background: url("/src/images/arrow-slider-black.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-black.svg") no-repeat;
     background-position: center center;
     grid-column: 2/3;
   }
@@ -3605,7 +3605,7 @@ button.swiper-pagination-bullet {
   #patent .patent-swiper-button-next {
     grid-column: 4/5;
     transform: rotate(180deg);
-    background: url("/src/images/arrow-slider-black.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-black.svg") no-repeat;
     background-position: center center;
   }
   #patent .patent-swiper-button-next::after {
@@ -3804,7 +3804,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 993px) {
   #tradition .tradition-swiper-button-prev {
-    background: url("/src/images/arrow-slider-big.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-big.svg") no-repeat;
     background-position: center center;
     width: 60px;
     position: absolute;
@@ -3815,7 +3815,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 993px) {
   #tradition .tradition-swiper-button-next {
-    background: url("/src/images/arrow-slider-big.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-big.svg") no-repeat;
     background-position: center center;
     width: 60px;
     position: absolute;
@@ -4420,7 +4420,7 @@ button.swiper-pagination-bullet {
   #quality .quality-swiper-button-prev {
     display: block;
     grid-row: 2/3;
-    background: url("/src/images/arrow-slider.svg") no-repeat;
+    background: url("../../src/images/arrow-slider.svg") no-repeat;
     background-position: center center;
     height: 60px;
     width: 50px;
@@ -4451,7 +4451,7 @@ button.swiper-pagination-bullet {
     align-self: center;
     justify-self: center;
     grid-row: 2/3;
-    background: url("/src/images/arrow-slider.svg") no-repeat;
+    background: url("../../src/images/arrow-slider.svg") no-repeat;
     background-position: center center;
     height: 60px;
     width: 50px;
@@ -5340,7 +5340,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 1280px) {
   #feedback .feedback-swiper-button-prev {
-    background: url("/src/images/arrow-slider-big.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-big.svg") no-repeat;
     background-position: center center;
     width: 60px;
     position: absolute;
@@ -5351,7 +5351,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 1280px) {
   #feedback .feedback-swiper-button-next {
-    background: url("/src/images/arrow-slider-big.svg") no-repeat;
+    background: url("../../src/images/arrow-slider-big.svg") no-repeat;
     background-position: center center;
     width: 60px;
     position: absolute;

@@ -23,7 +23,7 @@ $themeColor: #007aff !default;
 .swiper-button-prev,
 .swiper-button-next {
   grid-row: 2/3;
-  background: url(/src/images/arrow-slider.svg) no-repeat;
+  background: url("../../src/images/arrow-slider.svg") no-repeat;
   background-position: center center;
   height: 60px;
   width: 50px;
