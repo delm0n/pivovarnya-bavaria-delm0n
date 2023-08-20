@@ -18,7 +18,12 @@
         <div class="modal-order__wrapper-content">
           <h3 class="modal-title">Пивоварня Bavaria</h3>
 
-          <form class="spnForm form-modal" method="post" action="test.php">
+          <form
+            class="spnForm form-modal"
+            method="post"
+            action=""
+            v-on:submit.prevent
+          >
             <FormPresent :ids="this.findPresent.ids" />
 
             <div class="input-container">

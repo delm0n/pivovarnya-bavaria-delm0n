@@ -48,7 +48,8 @@
               v-bind:class="'order-wrapper__form ' + $store.state.webpSupport"
             >
               <form
-                action="test.php"
+                action=""
+                v-on:submit.prevent
                 method="post"
                 class="spnForm order-form order-form-content"
               >

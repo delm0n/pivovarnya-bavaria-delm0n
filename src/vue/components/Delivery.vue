@@ -12,7 +12,8 @@
             <div class="delivery-wrapper-container">
               <div class="form-container">
                 <form
-                  action="test.php"
+                  action=""
+                  v-on:submit.prevent
                   method="post"
                   class="spnForm order-form"
                 >

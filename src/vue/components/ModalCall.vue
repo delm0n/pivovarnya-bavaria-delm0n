@@ -10,7 +10,8 @@
         id="call-modal"
         method="post"
         class="spnForm form-modal"
-        action="test.php"
+        action=""
+        v-on:submit.prevent
       >
         <input type="hidden" class="url" name="url" />
         <input type="hidden" class="gmt" name="gmt" />
