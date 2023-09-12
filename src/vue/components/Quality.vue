@@ -178,7 +178,7 @@ export default {
         slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 0,
-        loop: true,
+
         navigation: {
           nextEl: ".quality-swiper-button-next",
           prevEl: ".quality-swiper-button-prev",

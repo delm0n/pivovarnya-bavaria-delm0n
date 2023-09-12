@@ -232,7 +232,7 @@ export default {
       trigger: "#delivery",
       once: true,
       onEnter: () => {
-        if (window.innerWidth >= 1440) {
+        if (window.innerWidth >= 1366) {
           var tl = gsap.timeline();
 
           tl.from(".car-bg", {

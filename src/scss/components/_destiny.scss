@@ -1,3 +1,4 @@
+@import "../default/mixins.scss";
 #destiny {
   .container {
     @extend .container-nopadding-mobile;
@@ -101,6 +102,8 @@
 
     &__title {
       @extend .title-section-28;
+
+      @include fluidFontSize(22, 28, 993, 1920);
     }
 
     &__text {

@@ -5,7 +5,7 @@
 
       <div class="feedback-wrapper">
         <div class="swiper-wrapper">
-          <div
+          <div 
             v-for="(photo, index) in photos"
             v-bind:key="index"
             class="swiper-slide feedback-item"

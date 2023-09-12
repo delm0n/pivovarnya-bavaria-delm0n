@@ -127,6 +127,7 @@
         transform: translateY(20px);
         transition: all 0.7s;
         pointer-events: none;
+        max-width: 100%;
 
         @media (max-width: 768px) {
           transform: translateY(40px);

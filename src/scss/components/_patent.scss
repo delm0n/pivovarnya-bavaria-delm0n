@@ -1,3 +1,5 @@
+@import "../default/mixins.scss";
+
 #patent {
   .patent-bg {
     &.nowebp {
@@ -138,13 +140,16 @@
     }
 
     &__img {
-      @media (max-width: 1300px) {
+      @media (max-width: 1385px) {
         display: none;
       }
 
       img {
         pointer-events: none;
         mix-blend-mode: multiply;
+        @media (max-width: 1500px) {
+          width: 160px;
+        }
       }
     }
 
@@ -152,9 +157,11 @@
       flex-shrink: 1;
       padding: 15px;
       padding-left: 0;
+      width: calc(100% + 40px);
 
-      @media (max-width: 1300px) {
+      @media (max-width: 1385px) {
         padding: 20px;
+        width: auto;
       }
 
       @media (max-width: 475px) {
@@ -165,11 +172,14 @@
         @extend .title-section-28;
         color: #000000;
         margin-bottom: 20px;
+        line-height: 125%;
 
-        @media (max-width: 1150px) {
-          font-size: 25px;
-          line-height: 32px;
-        }
+        @include fluidFontSize(20, 28, 993, 1920);
+
+        // @media (max-width: 1150px) {
+        //   font-size: 25px;
+        //   line-height: 32px;
+        // }
 
         @media (max-width: 768px) {
           font-size: 22px;
@@ -228,10 +238,6 @@
           position: absolute;
           transform: translateY(-20%);
 
-          @media (max-width: 1300px) {
-            // right: 20px;
-          }
-
           @media (max-width: 1150px) {
             // right: 10px;
             transform: translateY(-15%);
@@ -287,9 +293,6 @@
             }
           }
         }
-      }
-
-      .mobile-wrapper {
       }
     }
   }

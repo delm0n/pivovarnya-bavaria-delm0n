@@ -96,7 +96,7 @@ export default {
       slidesPerView: 2,
 
       slidesPerGroup: 1,
-      loop: true,
+
       //:loop-fill-group-with-blank="true"
       navigation: {
         nextEl: ".destiny-swiper-button-next",
@@ -112,20 +112,17 @@ export default {
           slidesPerView: 3,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: true,
         },
         992: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: true,
         },
 
         0: {
           slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 0,
-          loop: true,
         },
       },
       modules: [Navigation, Pagination],

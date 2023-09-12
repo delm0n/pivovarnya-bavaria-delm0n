@@ -97,6 +97,13 @@
 
   .quality-swiper-button-prev {
     display: none;
+
+    &.swiper-button-disabled {
+      opacity: 0.35;
+      cursor: auto;
+      pointer-events: none;
+    }
+
     @media (max-width: 1024px) {
       display: block;
       grid-row: 2/3;
@@ -122,6 +129,13 @@
 
   .quality-swiper-button-next {
     display: none;
+
+    &.swiper-button-disabled {
+      opacity: 0.35;
+      cursor: auto;
+      pointer-events: none;
+    }
+
     @media (max-width: 1024px) {
       display: block;
       grid-column: 4/5;

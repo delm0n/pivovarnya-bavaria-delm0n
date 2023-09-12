@@ -208,7 +208,7 @@
   }
 
   .consultation-phone-decr {
-    @media (min-width: 993px) {
+    @media (min-width: 1291px) {
       width: calc(100% + 50px);
     }
 
@@ -301,6 +301,12 @@
     position: absolute;
     top: -50%;
 
+    &-wrap {
+      @media (max-width: 1440px) and (min-width: 993px) {
+        display: none;
+      }
+    }
+
     @media (max-width: 1366px) {
       top: -35%;
       left: 10px;
@@ -343,7 +349,7 @@
         width: 260px;
       }
 
-      @media (max-width: 1290px) {
+      @media (max-width: 1440px) {
         display: none;
       }
     }

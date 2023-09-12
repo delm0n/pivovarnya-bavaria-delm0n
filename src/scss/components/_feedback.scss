@@ -9,6 +9,27 @@
     }
   }
 
+  .swiper-slide {
+    opacity: 0;
+    transition: opacity 0.1s 0s;
+
+    &-active {
+      opacity: 1;
+    }
+
+    @media (min-width: 993px) {
+      &-next + .swiper-slide {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 769px) {
+      &-next {
+        opacity: 1;
+      }
+    }
+  }
+
   .feedback-swiper-pagination {
     @extend .swiper-pagination;
   }

@@ -134,7 +134,7 @@ export default {
       spaceBetween: 30,
       slidesPerView: 2,
       slidesPerGroup: 1,
-      loop: false,
+
       navigation: {
         nextEl: ".result-swiper-button-next",
         prevEl: ".result-swiper-button-prev",
@@ -149,20 +149,17 @@ export default {
           slidesPerView: 3,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: false,
         },
         992: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: false,
         },
 
         0: {
           slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 0,
-          loop: false,
         },
       },
       modules: [Navigation, Pagination],

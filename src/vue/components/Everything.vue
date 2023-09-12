@@ -273,24 +273,28 @@ export default {
       },
 
       breakpoints: {
-        1440: {
+        1560: {
           slidesPerView: 3,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: false,
         },
-        993: {
+
+        1200: {
           slidesPerView: 2.2,
           slidesPerGroup: 1,
           spaceBetween: 30,
-          loop: false,
+        },
+
+        993: {
+          slidesPerView: 1.7,
+          slidesPerGroup: 1,
+          spaceBetween: 30,
         },
 
         0: {
           slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 0,
-          loop: false,
         },
       },
       modules: [Navigation, Pagination],

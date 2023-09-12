@@ -5,10 +5,18 @@ $texture-webp: url("/build/images/paper-texture-2.webp"), #f2e7c9;
 .container {
   max-width: 1630px;
   padding: 0 20px;
-  width: 100%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .container-nopadding-mobile {
