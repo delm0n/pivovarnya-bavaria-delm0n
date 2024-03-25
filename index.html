@@ -96,15 +96,14 @@
       <div class="footer-bg webp">
         <div class="container">
           <div class="footer-wrapper">
-            <div class="footer-wrapper__logo">
-              <img
-                class="logo-img"
-                src="build/images/logo-footer.webp"
-                alt="helicon"
-              />
-            </div>
-
             <div class="footer-wrapper__contact">
+              <div class="footer-wrapper__logo" style="margin-bottom: 20px">
+                <img
+                  class="logo-img"
+                  src="build/images/logo-footer.webp"
+                  alt="helicon"
+                />
+              </div>
               <a href="tel:88002505932" class="footer-wrapper__contact-tel"
                 >8 800 250 59 32</a
               >
@@ -124,7 +123,7 @@
             </div>
 
             <div class="footer-wrapper__links">
-              <a
+              <!-- <a
                 href="uploadupdate/confidentiality.pdf"
                 target="_blank"
                 class="doc"
@@ -139,7 +138,7 @@
                 class="doc"
                 rel="noopener"
                 >Доставка по всей России
-              </a>
+              </a> -->
 
               <a draggable="false" class="button" href="/opt/" target="_blank"
                 >Купить оптом</a
@@ -161,6 +160,23 @@
         </div>
       </div>
     </footer>
+
+    <style>
+      @media (max-width: 1024px) {
+        footer .footer-wrapper__logo img {
+          margin-left: auto;
+        }
+
+        footer .footer-wrapper__contact {
+          grid-column: 1 / 3;
+        }
+
+        footer .footer-wrapper__contact a,
+        footer .footer-wrapper__contact p {
+          text-align: left;
+        }
+      }
+    </style>
 
     <!-- fancybox -->
     <link rel="stylesheet" href="static/styles/fancybox-4.min.css" />

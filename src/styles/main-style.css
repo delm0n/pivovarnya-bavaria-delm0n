@@ -6563,9 +6563,7 @@ footer .footer-wrapper__logo {
 }
 @media (max-width: 1024px) {
   footer .footer-wrapper__logo {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: end;
+    margin-left: auto;
   }
   footer .footer-wrapper__logo img {
     width: 85px;
